@@ -1,0 +1,18 @@
+$(document).ready(function(){
+    $('.slider')._TMS({
+        show:0,
+        pauseOnHover:true,
+        prevBu:false,
+        nextBu:false,
+        playBu:false,
+        duration:700,
+        preset:'fade',
+        pagination:true,
+        pagNums:false,
+        slideshow:8000,
+        numStatus:false,
+        banners:false,
+        waitBannerAnimation:false,
+        progressBar:false
+    })
+});

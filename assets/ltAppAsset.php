@@ -13,22 +13,18 @@ use yii\web\AssetBundle;
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class AppAsset extends AssetBundle
+class ltAppAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/reset.css',
-        'css/style.css',
-        'http://fonts.googleapis.com/css?family=Great+Vibes',
+        'css/ie.css',
     ];
     public $js = [
-        'js/jquery-1.7.min.js',
-        'js/jquery.easing.1.3.js',
+        'js/html5.js'
     ];
     public $jsOptions = [
+        'condition' => 'if lt IE 9',
         'position' => \yii\web\View::POS_HEAD
-    ];
-    public $depends = [
     ];
 }
