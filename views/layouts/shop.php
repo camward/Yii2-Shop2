@@ -32,8 +32,8 @@ ltAppAsset::register($this);
             <nav>
                <ul class="menu">
                     <li><a href="<?=Url::to(['/shop/index'])?>">restaurant</a></li>
-                    <li><a href="<?=Url::to(['/shop/category'])?>">category</a></li>
-                    <li><a href="<?=Url::to(['#'])?>">basket</a></li>
+                    <li><a href="<?=Url::to(['/shop/products'])?>">products</a></li>
+                    <li><a href="#">basket</a></li>
                     <li><a href="<?=Url::to(['/shop/search'])?>">search</a></li>
                     <li><a href="<?=Url::to(['/shop/gallery'])?>">gallery</a></li>
                     <li><a href="<?=Url::to(['/shop/contact'])?>">contacts</a></li>

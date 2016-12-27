@@ -138,14 +138,14 @@ ul.menu li:hover a, ul.menu li.current a, ul.menu li.active a  { background:#e4e
 .block-3 { background:url(../images/block-3.png) center 0 no-repeat; margin-top:43px; overflow:hidden; padding-top:17px;}
 
 .box-3 {overflow:hidden; padding-top:30px; margin:0 40px 0 40px;}
-.box-3>div {width:190px; float:left; text-align:center; margin-right:10px;}
+.box-3>div {width:185px; float:left; text-align:center; margin-right:10px;}
 .box-3>div p {margin-top:11px;}
 
 .col-3 p.center {margin-top:29px;}
 .block-4 { background:url(../images/block-4.png) center 0 no-repeat; margin-top:17px; padding-top:15px;}
 
 .box-4 {overflow:hidden; padding-top:8px; margin-left:40px; margin-right:40px;}
-.box-4>div {width:190px; float:left; text-align:center; margin-right:10px;}
+.box-4>div {width: 185px;  float: left;  text-align: center;  margin-right: 10px;  margin-bottom: 30px;}
 .box-4>div h4 {margin-bottom:4px;}
 .box-4>div p {margin-top:11px;}
 
