@@ -26,6 +26,7 @@ class ShopController extends AppController
 
     public function actionIndex()
     {
+        $this->setMeta('Valensia Restourant', 'ключевые слова', 'описание');
         return $this->render('index');
     }
 
