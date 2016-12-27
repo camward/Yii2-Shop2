@@ -9,6 +9,11 @@ class ShopController extends AppController
         return $this->render('category');
     }
 
+    public function actionCategoryView()
+    {
+        return $this->render('category-view');
+    }
+
     public function actionContact()
     {
         return $this->render('contact');

@@ -43,7 +43,9 @@ ltAppAsset::register($this);
         </header>
         <!--==============================content================================-->
         <section id="content"><div class="ic"></div>
-
+            <div class="block-1">
+                <?= \app\components\CategoryWidget::widget()?>
+            </div>
             <div class="block-2 pad-2">
                 <?=$content;?>
             </div>

@@ -107,7 +107,7 @@ ul.menu li:hover a, ul.menu li.current a, ul.menu li.active a  { background:#e4e
 .img-border {background:#fff; display:inline-block; padding:3px; border:#d7d7d7 1px solid;}
 
 .block-1 {overflow:hidden; border:#bebebe 1px solid; border-top:none !important; background:url(../images/block-1.jpg) 0 bottom no-repeat #fff;}
-.block-1>div {float:left; width:169px; padding:25px 30px 23px 40px;}
+.block-1>div {float:left; width:166px; padding:25px 30px 23px 40px;}
 .block-1>div.block-1-last { width:158px; padding:25px 30px 22px 40px;}
 .block-1-title {height:81px; white-space:nowrap;}
 .block-1-title>span {display:block; font-size:18px; line-height:24px; font-style:italic; font-weight:bold; color:#b4b4b4; width:23px; float:left; margin-top:40px;}
