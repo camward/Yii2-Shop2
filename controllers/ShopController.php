@@ -48,4 +48,11 @@ class ShopController extends AppController
         return $this->render('search');
     }
 
+    public function actionProductsView($id)
+    {
+        $products = Product::find()->where(['id' => $id])->all();
+        $this->setMeta($products[0]->name . ' - Valensia Restourant', 'ключевые слова', 'описание');
+        return $this->render('products-view', compact('products'));
+    }
+
 }

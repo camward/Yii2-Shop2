@@ -1,4 +1,4 @@
-<div class="col-1" style="margin-top: 30px;">
+<div class="col-1" style="margin-top: 30px;" xmlns="http://www.w3.org/1999/html">
     <h2 class="h2-line">We are glad to invite you!<strong>The place where you feel bliss</strong></h2>
     <div class="box-1">
         <div class="img-border img-indent"><img src="/images/page1-img1.jpg" alt=""></div>
@@ -31,7 +31,10 @@
     <div class="box-3">
         <?foreach($hits as $hit):?>
             <div>
-                <div class="img-border"><?= \yii\helpers\Html::img("@web/images/{$hit->images}", ['alt' => $hit->name])?></div>
+                <div class="img-border">
+                    <a href="<?= \yii\helpers\Url::to(['shop/products-view', 'id' => $hit->id]) ?>">
+                        <?= \yii\helpers\Html::img("@web/images/{$hit->images}", ['alt' => $hit->name])?></div>
+                    </a>
                 <p class="border-2"><?=$hit->description?></p>
                 <p><?=$hit->price?> rub. <a href="#" class="link">buy</a></p>
             </div>

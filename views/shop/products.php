@@ -8,7 +8,11 @@
         <?foreach($products as $product):?>
             <div>
                 <h4><?=$product->name?></h4>
-                <div class="img-border"><?= \yii\helpers\Html::img("@web/images/{$product->images}", ['alt' => $product->name])?></div>
+                <div class="img-border">
+                    <a href="<?= \yii\helpers\Url::to(['shop/products-view', 'id' => $product->id]) ?>">
+                        <?= \yii\helpers\Html::img("@web/images/{$product->images}", ['alt' => $product->name])?>
+                    </a>
+                </div>
                 <p class="border-2"><?=$product->description?></p>
                 <p><?=$product->price?> rub. <a href="#" class="link">buy</a></p>
             </div>

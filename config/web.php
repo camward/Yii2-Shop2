@@ -48,6 +48,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 'products/page/<page:\d+>' => 'shop/products',
+                'products/<id:\d+>' => 'shop/products-view',
                 'category/<id:\d+>' => 'shop/category-view',
                 '<action>' => 'shop/<action>',
             ],
