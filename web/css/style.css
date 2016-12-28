@@ -234,3 +234,7 @@ dl.adr dd a:hover {}
 .pagination li.disabled{
     display: none;
 }
+.s_form{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}

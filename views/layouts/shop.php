@@ -34,7 +34,7 @@ ltAppAsset::register($this);
                     <li><a href="<?=Url::to(['/shop/index'])?>">restaurant</a></li>
                     <li><a href="<?=Url::to(['/shop/products'])?>">products</a></li>
                     <li><a href="#">basket</a></li>
-                    <li><a href="<?=Url::to(['/shop/search'])?>">search</a></li>
+                    <li><a href="<?=Url::to(['/shop/search-form'])?>">search</a></li>
                     <li><a href="<?=Url::to(['/shop/gallery'])?>">gallery</a></li>
                     <li><a href="<?=Url::to(['/shop/contact'])?>">contacts</a></li>
                 </ul>
