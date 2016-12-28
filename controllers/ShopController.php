@@ -22,6 +22,9 @@ class ShopController extends AppController
     {
         $products = Product::find()->where(['category_id' => $id])->all();
         $cat = Category::find()->where(['id' => $id])->all();
+        if(empty($cat))
+            throw new \yii\web\HttpException(404, 'Такой категории нет');
+
         $this->setMeta($cat[0]->name . ' - Valensia Restourant', 'ключевые слова', 'описание');
         return $this->render('category-view', compact('products', 'cat'));
     }
@@ -51,6 +54,9 @@ class ShopController extends AppController
     public function actionProductsView($id)
     {
         $products = Product::find()->where(['id' => $id])->all();
+        if(empty($products))
+            throw new \yii\web\HttpException(404, 'Такого товара нет');
+
         $this->setMeta($products[0]->name . ' - Valensia Restourant', 'ключевые слова', 'описание');
         return $this->render('products-view', compact('products'));
     }
