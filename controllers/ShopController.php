@@ -5,6 +5,7 @@ namespace app\controllers;
 use app\models\Category;
 use app\models\Product;
 use yii\data\Pagination;
+use app\models\Contact;
 use Yii;
 
 class ShopController extends AppController
@@ -31,7 +32,19 @@ class ShopController extends AppController
 
     public function actionContact()
     {
-        return $this->render('contact');
+        $this->setMeta('Контакты - Valensia Restourant', 'ключевые слова', 'описание');
+        $model = new Contact();
+        if($model->load(Yii::$app->request->post())){
+            if($model->validate()){
+                Yii::$app->session->setFlash('success', 'Ваше сообщение отправлено');
+                return $this->refresh();
+            }
+            else{
+                Yii::$app->session->setFlash('error', 'Ошибка при отправке сообщения');
+            }
+        }
+
+        return $this->render('contact', compact('model'));
     }
 
     public function actionGallery()
@@ -60,6 +73,7 @@ class ShopController extends AppController
 
     public function actionSearchForm()
     {
+        $this->setMeta('Поиск - Valensia Restourant', 'ключевые слова', 'описание');
         return $this->render('search-form');
     }
 
