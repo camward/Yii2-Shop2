@@ -14,4 +14,5 @@
             </div>
         <?endforeach;?>
     </div>
+    <?php echo \yii\widgets\LinkPager::widget(['pagination' => $pages]); ?>
 </div>

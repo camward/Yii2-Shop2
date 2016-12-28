@@ -214,3 +214,23 @@ dl.adr dd a:hover {}
 #form label strong {font-weight:normal; float:left; text-align:right; display:inline-block; width:60px; padding-top:4px; padding-right:9px;}
 .btns {text-align:right; width:310px; padding-top:6px;}
 .btns a {display:inline-block; margin:0 0px 0 20px;}
+
+.pagination{
+    width: 100%;
+    margin-top: 10px;
+}
+.pagination li{
+    float: left;
+}
+.pagination li a{
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    color: #50b3bc;
+}
+.pagination li.active a{
+    color: #000;
+}
+.pagination li.disabled{
+    display: none;
+}
