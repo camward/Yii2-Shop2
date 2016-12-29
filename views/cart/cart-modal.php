@@ -13,10 +13,14 @@
             <tbody>
                 <?php foreach($_SESSION['cart'] as $id => $item):?>
                     <tr>
-                        <td><?= \yii\helpers\Html::img("@web/images/{$item['images']}", ['alt' => $item['name'], 'height' => 50]) ?></td>
+                        <td>
+                            <a href="<?= \yii\helpers\Url::to(['shop/products-view', 'id' => $id]) ?>">
+                                <?= \yii\helpers\Html::img("@web/images/{$item['images']}", ['alt' => $item['name'], 'height' => 50]) ?>
+                            </a>
+                        </td>
                         <td><?= $item['name']?></td>
                         <td><?= $item['qty']?></td>
-                        <td><?= $item['price']?></td>
+                        <td><?= $item['price']?> rub.</td>
                         <td><span data-id="<?= $id?>" class="glyphicon glyphicon-remove text-danger del-item" aria-hidden="true"></span></td>
                     </tr>
                 <?php endforeach?>
@@ -26,7 +30,7 @@
                 </tr>
                 <tr>
                     <td colspan="4">На сумму: </td>
-                    <td><?= $session['cart.sum']?></td>
+                    <td><?= $session['cart.sum']?> rub.</td>
                 </tr>
             </tbody>
         </table>

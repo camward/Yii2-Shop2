@@ -41,9 +41,9 @@ use yii\helpers\Html;
 
     <?$form = ActiveForm::begin(['id' => 'form']);?>
     <fieldset>
-        <?=$form->field($model, 'name')?>
-        <?=$form->field($model, 'email')?>
-        <?=$form->field($model, 'text')->textarea(['rows' => 10])?>
+        <?=$form->field($model, 'name')->input('text', ['class' => 'form-control'])?>
+        <?=$form->field($model, 'email')->input('text', ['class' => 'form-control'])?>
+        <?=$form->field($model, 'text')->textarea(['rows' => 10, 'class' => 'form-control'])?>
     </fieldset>
     <div class="btns">
         <?=Html::resetButton('Очистить', ['class' => 'btn btn-sm btn-warning'])?>

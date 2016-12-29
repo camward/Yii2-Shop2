@@ -87,11 +87,11 @@ header {width:950px; margin:0px auto; padding-top:27px; z-index:101; position:re
 h1 {display:inline-block; z-index:100; background:url(../images/logo-bg.jpg) 0 0 no-repeat; width:550px; height:100px; margin-left:104px; padding-left:194px; }
 
 nav { width:948px; border:#d3d3d3 1px solid; margin-top:8px;}
-ul.menu {display:inline-block;}
+ul.menu {display:inline-block; width: 101%;}
 ul.menu li {float:left; border-left:#d3d3d3 1px solid; display:inline-block;}
 ul.menu li:first-child {border-left:none !important;}
-ul.menu li:first-child a { width:156px !important;}
-ul.menu li a { width:155px; color:#b4b4b4; font-size:18px; line-height:24px;  padding: 14px 0 19px 0; background:#fff; border:#fff 1px solid; border-bottom:none !important; display:block; text-align:center;}
+ul.menu li:first-child a { width:158px !important;}
+ul.menu li a { width:157px; color:#b4b4b4; font-size:18px; line-height:24px;  padding: 14px 0 19px 0; background:#fff; border:#fff 1px solid; border-bottom:none !important; display:block; text-align:center;}
 ul.menu li:hover a, ul.menu li.current a, ul.menu li.active a  { background:#e4e4e4; }
 
 .phone-number {font-size:24px; line-height:30px; color:#a70101; font-style:italic; text-align:center; position:absolute; left:0; top:16px; z-index:111; width:948px;} 
@@ -107,7 +107,7 @@ ul.menu li:hover a, ul.menu li.current a, ul.menu li.active a  { background:#e4e
 .img-border {background:#fff; display:inline-block; padding:3px; border:#d7d7d7 1px solid;}
 
 .block-1 {overflow:hidden; border:#bebebe 1px solid; border-top:none !important; background:url(../images/block-1.jpg) 0 bottom no-repeat #fff;}
-.block-1>div {float:left; width:166px; padding:25px 30px 23px 40px;}
+.block-1>div {float:left; width:230px; padding:25px 30px 23px 40px;}
 .block-1>div.block-1-last { width:158px; padding:25px 30px 22px 40px;}
 .block-1-title {height:81px; white-space:nowrap;}
 .block-1-title>span {display:block; font-size:18px; line-height:24px; font-style:italic; font-weight:bold; color:#b4b4b4; width:23px; float:left; margin-top:40px;}
@@ -215,49 +215,16 @@ dl.adr dd a:hover {}
 .btns {text-align:right; width:310px; padding-top:6px;}
 .btns a {display:inline-block; margin:0 0px 0 20px;}
 
-.pagination{
+.del-item{
+    cursor: pointer;
+}
+#form input, #form textarea{
     width: 100%;
-    margin-top: 10px;
-}
-.pagination li{
-    float: left;
-}
-.pagination li a{
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    margin-right: -1px;
-    color: #50b3bc;
-}
-.pagination li.active a{
-    color: #000;
-}
-.pagination li.disabled{
-    display: none;
-}
-.s_form{
-    border: 1px solid #ccc;
-    padding: 5px 10px;
+    min-height: 30px;
 }
 .help-block{
     width: 100%;
-    float: left;
-    color: #00a2df;
 }
-.btn{
-    background: none;
-    border: none;
-    cursor: pointer;
-    float: left;
-}
-.btn-warning{
-    color: #932d19;
-}
-.btn-success{
-    color: #00aa00;
-}
-.alert{
-    margin-top: 10px;
-    margin-bottom: -20px;
-    font-weight: bold;
-    color: #6c63da;
+.btns{
+    text-align: left;
 }
