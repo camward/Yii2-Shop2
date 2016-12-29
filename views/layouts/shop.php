@@ -33,9 +33,9 @@ ltAppAsset::register($this);
                <ul class="menu">
                     <li><a href="<?=Url::to(['/shop/index'])?>">restaurant</a></li>
                     <li><a href="<?=Url::to(['/shop/products'])?>">products</a></li>
-                    <li><a href="#" onclick="return getCart()">cart</a></li>
-                    <li><a href="<?=Url::to(['/shop/search-form'])?>">search</a></li>
-                    <li><a href="<?=Url::to(['/shop/gallery'])?>">gallery</a></li>
+                   <li><a href="<?=Url::to(['/shop/search-form'])?>">search</a></li>
+                   <li><a href="#" onclick="return getCart()">cart</a></li>
+                    <li><a href="<?=Url::to(['/cart/view'])?>">order</a></li>
                     <li><a href="<?=Url::to(['/shop/contact'])?>">contacts</a></li>
                 </ul>
                 <div class="clear"></div>
@@ -64,7 +64,7 @@ ltAppAsset::register($this);
     'id' => 'cart',
     'size' => 'modal-lg',
     'footer' => '<button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
-        <button type="button" class="btn btn-success">Оформить заказ</button>
+        <a href="' . \yii\helpers\Url::to(['cart/view']) . '" class="btn btn-success">Оформить заказ</a>
         <button type="button" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>'
 ]);
 
