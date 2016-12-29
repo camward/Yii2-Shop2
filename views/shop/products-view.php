@@ -2,7 +2,9 @@
     <h3 class="h3-line"><?=$products[0]->name?></h3>
     <div class="img-border pad-3"><?= \yii\helpers\Html::img("@web/images/{$products[0]->images}", ['alt' => $products[0]->name])?></div>
     <p class="border-1"><?=$products[0]->description?></p>
-    <p><?=$products[0]->price?> rub. <a href="#" class="link-1">buy</a></p>
+    <p><?=$products[0]->price?> rub.
+        <a href="<?= \yii\helpers\Url::to(['cart/add', 'id' => $products[0]->id])?>" data-id="<?= $products[0]->id?>" class="link add-to-cart">Add to cart</a>
+    </p>
 </div>
 <div class="col-5 left-2">
     <h2 class="h2-line-3">Wine list</h2>

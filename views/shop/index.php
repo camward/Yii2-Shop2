@@ -36,7 +36,9 @@
                         <?= \yii\helpers\Html::img("@web/images/{$hit->images}", ['alt' => $hit->name])?></div>
                     </a>
                 <p class="border-2"><?=$hit->description?></p>
-                <p><?=$hit->price?> rub. <a href="#" class="link">buy</a></p>
+                <p><?=$hit->price?> rub.
+                    <a href="<?= \yii\helpers\Url::to(['cart/add', 'id' => $hit->id])?>" data-id="<?= $hit->id?>" class="link add-to-cart">Add to cart</a>
+                </p>
             </div>
         <?endforeach;?>
     </div>
