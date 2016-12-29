@@ -23,7 +23,7 @@ class AppAsset extends AssetBundle
         'http://fonts.googleapis.com/css?family=Great+Vibes',
     ];
     public $js = [
-        'js/jquery-1.7.min.js',
+        // 'js/jquery-1.7.min.js',
         'js/jquery.easing.1.3.js',
         'js/main.js'
     ];
@@ -31,5 +31,7 @@ class AppAsset extends AssetBundle
         'position' => \yii\web\View::POS_HEAD
     ];
     public $depends = [
+        'yii\web\YiiAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
     ];
 }

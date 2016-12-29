@@ -33,7 +33,7 @@ ltAppAsset::register($this);
                <ul class="menu">
                     <li><a href="<?=Url::to(['/shop/index'])?>">restaurant</a></li>
                     <li><a href="<?=Url::to(['/shop/products'])?>">products</a></li>
-                    <li><a href="#">basket</a></li>
+                    <li><a href="#" onclick="return getCart()">cart</a></li>
                     <li><a href="<?=Url::to(['/shop/search-form'])?>">search</a></li>
                     <li><a href="<?=Url::to(['/shop/gallery'])?>">gallery</a></li>
                     <li><a href="<?=Url::to(['/shop/contact'])?>">contacts</a></li>
@@ -57,6 +57,19 @@ ltAppAsset::register($this);
         </footer>
     </div>
 </div>
+
+<?php
+\yii\bootstrap\Modal::begin([
+    'header' => '<h2>Корзина</h2>',
+    'id' => 'cart',
+    'size' => 'modal-lg',
+    'footer' => '<button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
+        <button type="button" class="btn btn-success">Оформить заказ</button>
+        <button type="button" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>'
+]);
+
+\yii\bootstrap\Modal::end();
+?>
 
 <?php $this->endBody() ?>
 </body>
